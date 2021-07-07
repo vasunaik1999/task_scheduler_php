@@ -56,6 +56,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-6">
                     <div class="card mt-4" style="height:100%;">
                         <div class="card-body background-grey">
@@ -77,6 +78,7 @@
                                 $start_time = $_POST['start_time'];
                                 $end_time = $_POST['end_time'];
                                 $comment = $_POST['comment'];
+
                                 $start_time2 = strtotime($start_time);
                                 $end_time2 = strtotime($end_time);
 
@@ -198,15 +200,3 @@
 </body>
 
 </html>
-
-<!-- Insert Query -->
-<!-- INSERT INTO `task_sheduler` (`id`, `date`, `start_time`, `end_time`, `comment`) VALUES ('1', '2021-07-05', '06:00:00', '06:30:00', 'Gauti meeting'); -->
-
-<!-- if ($result = $conn->query($sql)) {
-while ($row = $result->fetch_assoc()) {
-echo $row['date'] . "<br>";
-echo $row['start_time'] . "<br>";
-echo $row['end_time'] . "<br>";
-echo $row['comment'] . "<br>";
-}
-} -->
